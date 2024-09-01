@@ -1,51 +1,32 @@
-<Html>  
-    <head>   
-    <title>  
-    Registration Page  
-    </title>  
-    </head>  
-    <body bgcolor="White">  
-    <br>  
-    <br>  
-    <form>  
-      <h2>Student Registration Form</h2>
-      </form>
-    <label> Firstname </label>  
-    <br><br>       
-    <input type="text" name="first name" size="30"/> <br> <br>   
-    <label> Lastname: </label>    
-    <br><br>     
-    <input type="text" name="last name" size="30"/> <br> <br>  
-        
-    <label for="gendr">Gender:</label>  
-    <br><br>  
-    <select name="gender">
-    <option value="female">Female</option>
-    <option value="male">Male</option>
-    <option value="other">Other</option>
-    </select>  
-    <br>  
-    <br> 
-    <label> 
-    Email: 
-    </label>  
-    <br><br>
-    <input type="email" id="email" name="email"/> <br>    
-    <br> <br>
-    <label>   
-    Date of Birth:
-    </label>  
-    <br><br>
-    <input type="date" name="btn" size="30"/>
-     <br> <br> 
-
-    <label class="header"> Profile Photo:</label>
-    <br><br>
-    <input id="image" type="file" name="profile_photo" placeholder="photo" required="" capture>  
-    <br> <br>    
-
-    <input type="button" value="Submit" style="background-color: #4CAF50; color:white;" />
-
-    </form>  
-    </body>  
-    </html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-DO LIST</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-do List</h1>
+    <div class="input-container">
+      <input class="todo-input" placeholder="Add a new task...">
+      <button class="add-button">
+        <i class="fa fa-plus-circle"></i>
+      </button>
+    </div>
+    <div class="filters">
+      <div class="filter" data-filter="completed">Complete</div>
+      <div class="filter" data-filter="pending">Incomplete</div>
+      <div class="delete-all">Delete All</div>
+    </div>
+    <div class="todos-container">
+      <ul class="todos"></ul>
+      <img class="empty-image" src="./check.svg">
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
